@@ -12,7 +12,7 @@
             "dist": {
                 "type": "path",
                 "url": "../my-bundle",
-                "reference": "b65b8613c7229e7206f89bc19bda91d8fbe9e14d"
+                "reference": "64174969073954d9359523b4d49d2a72d3039bbb"
             },
             "require": {
                 "php": ">=8.1"
