@@ -4,8 +4,40 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f1c7f9d360f87d800f5bff5d59f2412",
+    "content-hash": "5954c7d8dc74a0dfcc12fa0b1099b1b5",
     "packages": [
+        {
+            "name": "carlospauluk/my-bundle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "../my-bundle",
+                "reference": "b65b8613c7229e7206f89bc19bda91d8fbe9e14d"
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "6.2.*"
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "MyBundleNamespace\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "MyBundleNamespace\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "doctrine/annotations",
             "version": "1.14.2",
@@ -9691,7 +9723,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "carlospauluk/my-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
